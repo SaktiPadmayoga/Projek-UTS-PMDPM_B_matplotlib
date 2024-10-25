@@ -14,14 +14,14 @@ with st.sidebar:
 
 # Fungsi untuk memuat model
 def load_model():
-    with open('gscv_SVM_percentile_model.pkl', 'rb') as file:
+    with open('BestModel_CLF_gscv_SVM_percentile_matplotlib.pkl', 'rb') as file:
         model = pickle.load(file)
     return model
 
 gscv_SVM_percentile_model = load_model()
 
 def load_model1():
-    with open('GSCV_RF_model.pkl', 'rb') as file:
+    with open('BestModel_REG_GSCV_RF_matplotlib.pkl', 'rb') as file:
         model1 = pickle.load(file)
     return model1
 
